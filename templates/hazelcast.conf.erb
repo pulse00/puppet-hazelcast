@@ -1,0 +1,13 @@
+# /etc/init/hazelcast.conf
+
+description "hazelcast"
+author      "Robert Gruendler <robert.gruendler@dubture.com>"
+
+start on vagrant-mounted
+stop on shutdown
+
+chdir /opt/hazelcast/bin
+
+script
+    exec sh /opt/hazelcast/bin/server.sh
+end script

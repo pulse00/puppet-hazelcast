@@ -1,5 +1,5 @@
 name    'pulse00/hazelcast'
-version '0.1.0'
+version '0.2.0'
 source 'https://github.com/pulse00/puppet-hazelcast'
 author 'pulse00'
 license 'The MIT License (MIT)'

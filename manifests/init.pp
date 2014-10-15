@@ -1,11 +1,11 @@
 class hazelcast(
-  $version = '3.2',
+  $version = '3.3.1',
   $user = 'dev',
   $password = 'dev'
   ){
 
   $majorVersion = regsubst($version, '^(\d+)\.(\d+).*$', '\1.\2')
-  $versions = [ '2.0.4', '2.1.3', '2.2.0', '2.3.1', '2.4.1', '2.5.1', '2.6.7', '3.0.3', '3.1.3', '3.1.4', '3.1.7', '3.2']
+  $versions = [ '2.0.4', '2.1.3', '2.2.0', '2.3.1', '2.4.1', '2.5.1', '2.6.7', '3.0.3', '3.1.3', '3.1.4', '3.1.7', '3.2.6', '3.3.1']
 
   if ! ($version in $versions) {
     fail("The version ${version} is not supported")

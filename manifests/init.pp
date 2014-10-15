@@ -27,7 +27,7 @@ class hazelcast(
   }
 
   exec { "download-hazelcast":
-    command => "/usr/bin/wget http://hazelcast.org/files/hazelcast-${version}.zip -P /opt",
+    command => "/usr/bin/wget http://download.hazelcast.com/downloads/hazelcast-${version}.zip -P /opt",
     creates => "/opt/hazelcast-${version}.zip"
   }
 

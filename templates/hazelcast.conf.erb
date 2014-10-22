@@ -9,5 +9,5 @@ stop on shutdown
 chdir /opt/hazelcast-<%= @version %>/bin
 
 script
-    exec sh /opt/hazelcast-<%= @version %>/bin/server.sh
+    exec ./server.sh
 end script
